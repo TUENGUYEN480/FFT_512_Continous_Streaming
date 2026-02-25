@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" modified="2026-01-05T12:35:00.000Z" agent="5.0 (Linux)" etag="5jR8zY9mTg__" version="20.8.5" type="device">
+  <diagram name="FFT Control FSM v2">
+    <mxGraphModel dx="1478" dy="947" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="IDLE" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#cfe8ff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="READ_A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#f2f2f2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="WAIT_A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#fdf1d6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="210" y="100" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="READ_B" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#f2f2f2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="380" y="100" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="WAIT_B" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#fdf1d6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="550" y="100" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="LOAD_W" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#f2f2f2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="210" y="220" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="CALC" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#fdf1d6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="210" y="320" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="WRITE_A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#f2f2f2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="210" y="420" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="WRITE_B" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#fdf1d6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="210" y="520" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="NEXT_PAIR" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#f2f2f2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="210" y="620" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="DONE" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1a1a1a;fillColor=#d4ffd8;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="210" y="720" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="WAIT_A outputs:\nmux_sel=00\ncapture A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#424242;fillColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="210" y="160" width="160" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" value="WAIT_B outputs:\nmux_sel=01\ncapture B" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#424242;fillColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="550" y="160" width="160" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="LOAD_W outputs:\nbf_start=1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#424242;fillColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="160" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" value="WRITE_A outputs:\nram_we=1\nmux_sel=10" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#424242;fillColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="380" y="420" width="160" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" value="WRITE_B outputs:\nram_we=1\nmux_sel=11" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#424242;fillColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="380" y="520" width="160" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" value="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#0b5fff;endArrow=classic;html=1;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;endArrow=classic;html=1;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;endArrow=classic;html=1;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;endArrow=classic;html=1;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;endArrow=classic;html=1;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;endArrow=classic;html=1;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" value="bf_done" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;endArrow=classic;html=1;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;endArrow=classic;html=1;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;endArrow=classic;html=1;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="27" value="pair=3 && stage=2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#ff0000;endArrow=classic;html=1;" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="28" value="else" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;endArrow=classic;html=1;" edge="1" parent="1" source="11" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

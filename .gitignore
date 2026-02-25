@@ -1,0 +1,137 @@
+# Simulation outputs
+*.log
+*.history
+*.shm/
+*.fsdb
+*.vcd
+*.vpd
+*.wlf
+*.ucdb
+waves.shm/
+work/
+xcelium.d/
+INCA_libs/
+xrun.*/
+cov_work/
+
+# Cadence Xcelium specific
+.timestamp.ts
+.xmlibpath
+bind.lst*
+*.args
+*.env
+*.hrd
+hdl.var
+hdlrun.var
+OVMHOME
+UVMHOME
+*.d/
+pakvst.ts
+files.ts
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.pkl
+*.npy
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Vim swap files
+.*.sw?
+.*.un~
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Generated files
+*.out
+*.pak
+*.tag
+.cdsvmod
+.xm.db.*
+
+# OS specific
+Thumbs.db
+Desktop.ini
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Test outputs
+test_results/
+*.test
+
+# Waveform databases
+*.trn
+*.dsn
+
+# Synthesis outputs (if applicable)
+*.v.bak
+*_synth.v
+*.tcl.bak
+
+# Compile outputs
+*.o
+*.ko
+*.obj
+*.elf
+*.exe
+*.dll
+*.dylib
+*.a
+*.lib
+
+# Debug files
+*.dSYM/
+*.su
+
+# Project specific generated files
+02_sim/twiddle_rom.txt
+02_sim/fft_output.txt
+02_sim/verification_report.txt
