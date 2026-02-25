@@ -135,3 +135,6 @@ test_results/
 02_sim/twiddle_rom.txt
 02_sim/fft_output.txt
 02_sim/verification_report.txt
+
+# Personal guide files (not needed on GitHub)
+GITHUB_UPLOAD_GUIDE.md
