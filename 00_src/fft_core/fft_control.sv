@@ -81,7 +81,7 @@ module fft_control (
             CALC:      if (bf_done) next_state = WRITE_A;
             WRITE_A:   next_state = WRITE_B;
             WRITE_B:   next_state = NEXT_PAIR;
-            NEXT_PAIR: if (finish) next_state = DONE_STATE;
+            NEXT_PAIR: if (pair == 9'd255 && stage == 4'd8) next_state = DONE_STATE;
                        else next_state = READ_A;
             DONE_STATE: next_state = DONE_STATE;
             default:   next_state = IDLE;

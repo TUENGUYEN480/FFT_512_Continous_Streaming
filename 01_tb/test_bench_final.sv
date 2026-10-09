@@ -130,8 +130,7 @@ module tb_fft_512pt_verify;
             if (a_err > TOLERANCE) err_cnt++;
 
             // Chỉ in các mẫu đầu, cuối và mẫu lỗi để tránh tràn màn hình
-            // YÊU CẦU: KHÔNG IN RIÊNG DÒNG BIN 2 (VÌ FAIL), CÒN LẠI GIỮ NGUYÊN
-            if ((k < 5 || k > N-6 || a_err > TOLERANCE) && (k != 2)) begin
+            if ((k < 5 || k > N-6 || a_err > TOLERANCE)) begin
                 $display(" %5d | (%10.4f, %10.4f) | (%10.4f, %10.4f) | %10.6f %s",
                          k, exp_re[k], exp_im[k], act_re[k], act_im[k], a_err,
                          (a_err > TOLERANCE) ? "[FAIL]" : "");
